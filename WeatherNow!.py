@@ -8,8 +8,8 @@ WIDTH = 600
 def test_function(entry):
     print("THis is the entry")
     
-# https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={YOUR API KEY}
-# 5651d2afbae9789b9da78dc9d6d1b765
+# PUT YOUR  OPENWEATHERMAP LINK ADDRESS HERE! (sign in to OpenWeatherMap, see the description for more info)
+# PUT YOUR OPENWEATHERMAP KEY HERE
 
 def format_response(weather):
     try:
@@ -25,9 +25,9 @@ def format_response(weather):
  
 
 def get_weather(city):
-    weather_key = '5651d2afbae9789b9da78dc9d6d1b765'
-    url = 'https://api.openweathermap.org/data/2.5/weather'
-    params = {'APPID': weather_key, 'q': city, 'units': 'Metric'}
+    weather_key = 'PUT YOUR API WEATHER KEY HERE AGAIN'
+    url = 'PUT YOUR HTTPS LINK HERE AGAIN'
+    params = {'APPID': weather_key, 'q': city, 'units': 'Metric'} 
     response = requests.get(url, params=params)
     weather = response.json()
 
